@@ -1,11 +1,4 @@
-.categories__container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.category__container {
+.category-container {
   min-width: 30%;
   height: 240px;
   flex: 1 1 auto;
@@ -19,12 +12,12 @@
   &:hover {
     cursor: pointer;
 
-    & .category__image {
+    & .background-image {
       transform: scale(1.1);
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
 
-    & .category__body {
+    & .category-body-container {
       opacity: 0.9;
     }
   }
@@ -48,7 +41,7 @@
     background-position: center;
   }
 
-  .category__body {
+  .category-body-container {
     height: 90px;
     padding: 0 25px;
     display: flex;
