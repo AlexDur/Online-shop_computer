@@ -3,9 +3,9 @@
 
 import { Routes, Route } from "react-router-dom";
 
-import Home from "./components/routes/home.comp";
+import Home from "./components/home/home.comp";
 import Navi from "./components/routes/navigation/navi.comp";
-import SignIn from "./components/routes/sign-in/sign-in.comp";
+import Authentication from "./components/routes/authentication/authentication.comp";
 import "./index.scss";
 
 const Shop = () => {
@@ -18,7 +18,7 @@ const App = () => {
       <Route path="/" element={<Navi />}>
         <Route index element={<Home />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/auth" element={<Authentication />} />
       </Route>
     </Routes>
   );

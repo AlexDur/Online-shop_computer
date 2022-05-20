@@ -1,16 +1,19 @@
-/* import { useState } from "react";
+import { useState } from "react";
 import { createContext } from "react";
 
-//as the actual value we want to access
+//useContext is basically leveraging useState
+
+//the actual value to access
 export const UserContext = createContext({
- currentUser: null,
- setCurrentUser: () => null,
-})
+  currentUser: null,
+  setCurrentUser: () => null,
+});
 
 //the actual component
-export const UserProvider = (children) => {
-    const[currentUser, setCurrentUser] = useState(null)
-    const value = { currentUser, setCurrentUser}
-return <UserContext.Provider value={}>{children}</UserContext.Provider>
-}
- */
+//dot-provider is the component that will wrap around any other components that need access to the value inside
+//"value" in return block will hold the actual contexter value
+export const UserProvider = ({ children }) => {
+  const [currentUser, setCurrentUser] = useState(null);
+  const value = { currentUser, setCurrentUser };
+  return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
+};
