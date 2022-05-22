@@ -5,15 +5,20 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import App from "./App";
 import { UserProvider } from "./components/contexts/user.context";
+import { ProductsProvider } from "./components/contexts/products.context";
 
 import reportWebVitals from "./reportWebVitals";
+
+//Wrapping UserProvider around ProductsProvider. This way, products can reach up into the UserProvider and get the value
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
       <UserProvider>
-        <App />
+        <ProductsProvider>
+          <App />
+        </ProductsProvider>
       </UserProvider>
     </Router>
   </React.StrictMode>
