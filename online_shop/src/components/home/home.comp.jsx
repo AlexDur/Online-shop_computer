@@ -8,28 +8,28 @@ const Home = () => {
   const categories = [
     {
       id: 1,
-      title: "hats",
-      imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+      title: "workstations",
+      imageUrl: "https://i.ibb.co/1qzvfh1/notebook-test.png",
     },
     {
       id: 2,
-      title: "jackets",
-      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+      title: "server",
+      imageUrl: "https://i.ibb.co/641yCff/workstation.png",
     },
     {
       id: 3,
-      title: "sneakers",
-      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+      title: "notebooks",
+      imageUrl: "https://i.ibb.co/SPbwmjH/notebook.jpg",
     },
     {
       id: 4,
-      title: "womens",
-      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
+      title: "graphic cards",
+      imageUrl: "https://i.ibb.co/7k04F5p/komponenten.png",
     },
     {
       id: 5,
-      title: "mens",
-      imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+      title: "NAS and DAS",
+      imageUrl: "https://i.ibb.co/wsywgYb/nas-das.png",
     },
   ];
 

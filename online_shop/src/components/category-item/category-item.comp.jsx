@@ -8,6 +8,8 @@ const CategoryItem = ({ category }) => {
         className="background-image"
         style={{
           backgroundImage: `url(${imageUrl})`,
+          width: 500,
+          height: 500,
         }}
       />
       <div className="category-body-container">
