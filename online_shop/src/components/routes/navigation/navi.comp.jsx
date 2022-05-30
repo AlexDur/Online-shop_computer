@@ -6,7 +6,7 @@ import { CartContext } from "../../contexts/cart.context";
 import CartIcon from "../../cart-icon/cart-icon.com";
 import CartDropdown from "../../cart-dropdown.comp.jsx/cart-dropdown.comp";
 
-import { ReactComponent as CrownLogo } from "../../../assets/crown.svg";
+import { ReactComponent as Cyborg } from "../../../assets/icon_cyborg.svg";
 import { signOutUser } from "../../../utils/firebase/firebase.utils";
 
 import "./navi.styles.scss";
@@ -19,7 +19,7 @@ const Navi = () => {
     <>
       <div className="navigation">
         <Link className="logo-container" to="/">
-          <CrownLogo className="logo" />
+          <Cyborg className="logo" />
         </Link>
         <div className="nav-links-container">
           <Link className="nav-link" to="/shop">
