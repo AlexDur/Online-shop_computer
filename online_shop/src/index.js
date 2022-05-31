@@ -16,6 +16,7 @@ import reportWebVitals from "./reportWebVitals";
 //didn't finish with, we could pull it from that.
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <Router>
